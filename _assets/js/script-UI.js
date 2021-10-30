@@ -3,7 +3,7 @@ const featuresImage = document.querySelectorAll('.features-item img')
 const teamSocialIcon = document.querySelectorAll('.social__icon')
 const footerIcons = document.querySelectorAll('.share__links svg')
 
-// footerIcons
+// FooterIcons
 const iconHeightFooter = []
 const iconWidthFooter = []
 let iconSizeReaded = false
