@@ -1,1 +1,77 @@
 /* Анимациии адаптировать для телефонов */
+
+@media (max-width: 992px) {
+  /* ============== TEAM ============== */
+
+  /* === TEAM PHOTO === */
+  .team-mainPart > .team__item:nth-child(1) .team__photo._active-anim,
+  .team-mainPart > .team__item:nth-child(3) .team__photo._active-anim {
+    transition: all 0.8s ease 0.3s;
+  }
+  .team-mainPart > .team__item:nth-child(2) .team__photo._active-anim,
+  .team-mainPart > .team__item:nth-child(4) .team__photo._active-anim {
+    transition: all 0.8s ease 1.05s;
+  }
+
+  /* === TEAM PEOPLE-NAME === */
+  .team-mainPart > .team__item:nth-child(1) .team__people-name,
+  .team-mainPart > .team__item:nth-child(3) .team__people-name {
+    transform: translate(-70%, 0px);
+  }
+  .team-mainPart > .team__item:nth-child(2) .team__people-name,
+  .team-mainPart > .team__item:nth-child(4) .team__people-name {
+    transform: translate(55%, 0px);
+  }
+
+  .team-mainPart > .team__item:nth-child(1) .team__people-name._active-anim,
+  .team-mainPart > .team__item:nth-child(3) .team__people-name._active-anim {
+    transition: all 0.9s ease 0.3s;
+    transform: translate(0px, 0px);
+  }
+  .team-mainPart > .team__item:nth-child(2) .team__people-name._active-anim,
+  .team-mainPart > .team__item:nth-child(4) .team__people-name._active-anim {
+    transition: all 0.9s ease 1.05s;
+    transform: translate(0px, 0px);
+  }
+
+  /* === PEOPLE WORK === */
+  .team-mainPart > .team__item:nth-child(1) .people-work,
+  .team-mainPart > .team__item:nth-child(3) .people-work {
+    transform: translate(-70%, 0px);
+  }
+  .team-mainPart > .team__item:nth-child(2) .people-work,
+  .team-mainPart > .team__item:nth-child(4) .people-work {
+    transform: translate(55%, 0px);
+  }
+
+  .team-mainPart > .team__item:nth-child(1) .people-work._active-anim,
+  .team-mainPart > .team__item:nth-child(3) .people-work._active-anim {
+    transition: all 0.9s ease 0.45s;
+    transform: translate(0px, 0px);
+  }
+  .team-mainPart > .team__item:nth-child(2) .people-work._active-anim,
+  .team-mainPart > .team__item:nth-child(4) .people-work._active-anim {
+    transition: all 0.9s ease 1.2s;
+    transform: translate(0px, 0px);
+  }
+
+  /* === TEAM TEXT === */
+  .team-mainPart > .team__item:nth-child(1) .team__text._active-ani,
+  .team-mainPart > .team__item:nth-child(3) .team__text._active-anim {
+    transition: all 0.8s ease 0.55s;
+  }
+  .team-mainPart > .team__item:nth-child(2) .team__text._active-anim,
+  .team-mainPart > .team__item:nth-child(4) .team__text._active-anim {
+    transition: all 0.8s ease 1.3s;
+  }
+
+  /* === TEAM SOCIAL === */
+  .team-mainPart > .team__item:nth-child(1) .team__social._active-anim,
+  .team-mainPart > .team__item:nth-child(3) .team__social._active-anim {
+    transition: 3s ease 1s;
+  }
+  .team-mainPart > .team__item:nth-child(2) .team__social._active-anim,
+  .team-mainPart > .team__item:nth-child(4) .team__social._active-anim {
+    transition: 3s ease 1.75s;
+  }
+}
