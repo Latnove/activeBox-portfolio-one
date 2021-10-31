@@ -71,7 +71,8 @@ pacity: 1; */
   transform: translate(-40%, 0px);
 }
 .features__inner > .features-item:nth-child(2) .feature__name {
-  transform: translate(0px, 120%);
+  transform: translate(0px, 0px);
+  transition: all 1.5s ease 0.45s;
 }
 .features__inner > .features-item:nth-child(3) .feature__name {
   transform: translate(40%, 0px);
