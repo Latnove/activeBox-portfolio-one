@@ -295,18 +295,18 @@ pacity: 1; */
 }
 
 /* === DOWNLOAD BUTTON === */
-.download__button {
+.btn--long {
   opacity: 0;
   transform: translate(0px, 60%);
   transition: all 0.05s;
 }
-.download__button._active-anim {
+.btn--long._active-anim {
   transition: all 0.8s ease 0.8s;
 }
 
 .download__title._active-anim,
 .download__text._active-anim,
-.download__button._active-anim {
+.btn--long._active-anim {
   transform: translate(0px, 0px);
   opacity: 1;
 }
