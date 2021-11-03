@@ -1,6 +1,30 @@
-/* Анимациии адаптировать для телефонов */
+/* Анимациии для телефонов */
 
-@media (max-width: 992px) {
+@media (max-width: 993px) {
+  ._show-anim-below {
+    transform: translate(0px, 83%);
+  }
+
+  /* ============== INTRO ============== */
+  .intro__text {
+    transform: translate(0px, 83%);
+  }
+  .button-block {
+    transform: translate(0px, 78%);
+  }
+
+  /* ============== FEATURES ============== */
+
+  /* === FEATURE NAME === */
+  .feature__name {
+    transform: translate(0px, 120%);
+  }
+
+  /* === FEATURE TEXT === */
+  .feature__name._active-anim {
+    transition: all 0.8s ease 0.45s;
+  }
+
   /* ============== TEAM ============== */
 
   /* === TEAM PHOTO === */
@@ -14,15 +38,9 @@
   }
 
   /* === TEAM PEOPLE-NAME === */
-  .team-mainPart > .team__item:nth-child(1) .team__people-name,
-  .team-mainPart > .team__item:nth-child(3) .team__people-name {
-    transform: translate(-70%, 0px);
+  .team__people-name {
+    transform: translate(0px, 40px);
   }
-  .team-mainPart > .team__item:nth-child(2) .team__people-name,
-  .team-mainPart > .team__item:nth-child(4) .team__people-name {
-    transform: translate(55%, 0px);
-  }
-
   .team-mainPart > .team__item:nth-child(1) .team__people-name._active-anim,
   .team-mainPart > .team__item:nth-child(3) .team__people-name._active-anim {
     transition: all 0.9s ease 0.3s;
@@ -35,15 +53,9 @@
   }
 
   /* === PEOPLE WORK === */
-  .team-mainPart > .team__item:nth-child(1) .people-work,
-  .team-mainPart > .team__item:nth-child(3) .people-work {
-    transform: translate(-70%, 0px);
+  .people-work {
+    transform: translate(0px, 30px);
   }
-  .team-mainPart > .team__item:nth-child(2) .people-work,
-  .team-mainPart > .team__item:nth-child(4) .people-work {
-    transform: translate(55%, 0px);
-  }
-
   .team-mainPart > .team__item:nth-child(1) .people-work._active-anim,
   .team-mainPart > .team__item:nth-child(3) .people-work._active-anim {
     transition: all 0.9s ease 0.45s;
@@ -56,22 +68,386 @@
   }
 
   /* === TEAM TEXT === */
-  .team-mainPart > .team__item:nth-child(1) .team__text._active-ani,
+  .team__text {
+    transform: translate(0px, 30%);
+  }
+  .team-mainPart > .team__item:nth-child(1) .team__text._active-anim,
   .team-mainPart > .team__item:nth-child(3) .team__text._active-anim {
     transition: all 0.8s ease 0.55s;
+    transform: translate(0px, 0px);
   }
   .team-mainPart > .team__item:nth-child(2) .team__text._active-anim,
   .team-mainPart > .team__item:nth-child(4) .team__text._active-anim {
     transition: all 0.8s ease 1.3s;
+    transform: translate(0px, 0px);
   }
 
   /* === TEAM SOCIAL === */
   .team-mainPart > .team__item:nth-child(1) .team__social._active-anim,
   .team-mainPart > .team__item:nth-child(3) .team__social._active-anim {
-    transition: 3s ease 1s;
+    transition: 3.5s ease 0.9s;
   }
   .team-mainPart > .team__item:nth-child(2) .team__social._active-anim,
   .team-mainPart > .team__item:nth-child(4) .team__social._active-anim {
+    transition: 3.5s ease 1.75s;
+  }
+}
+
+@media (max-width: 768px) {
+  ._show-anim-below {
+    transform: translate(0px, 80%);
+  }
+
+  /* ============== INTRO ============== */
+  .intro__text {
+    transform: translate(0px, 80%);
+  }
+  .button-block {
+    transform: translate(0px, 75%);
+  }
+
+  /* ============== FEATURES ============== */
+
+  /* === PHOTO ANIMATIONS === */
+  .features__inner .features-item:nth-of-type(1) img._active-anim,
+  .features__inner .features-item:nth-of-type(3) img._active-anim {
+    transition: all 0.8s ease 0.7s;
+  }
+  .features__inner .features-item:nth-of-type(2) img._active-anim {
+    transition: all 0.8s ease 0.5s;
+  }
+  .features__inner .features-item:nth-of-type(4) img._active-anim,
+  .features__inner .features-item:nth-of-type(6) img._active-anim {
+    transition: all 0.8s ease 0.5s;
+  }
+  .features__inner .features-item:nth-of-type(5) img._active-anim {
+    transition: all 0.8s ease 0.7s;
+  }
+
+  /* === FEATURE NAME === */
+  .feature__name._active-anim {
+    transition: all 0.8s ease 0.6s;
+  }
+  .feature__name {
+    transform: translate(0px, 110%);
+  }
+
+  /* === FEATURE TEXT === */
+  .feature__text._active-anim {
+    transition: 2.4s ease 1s;
+  }
+
+  /* ============== TEAM ============== */
+
+  /* === TEAM PEOPLE-NAME === */
+  .team__people-name {
+    transform: translate(0px, 30px);
+  }
+
+  /* === PEOPLE WORK === */
+  .people-work {
+    transform: translate(0px, 20px);
+  }
+
+  /* === TEAM TEXT === */
+  .team__text {
+    transform: translate(0px, 20%);
+  }
+
+  /* ============== DOWNLOAD ============== */
+
+  /* === DOWNLOAD TITLE === */
+  .download__title {
+    transform: translate(0px, -145%);
+  }
+
+  /* === DOWNLOAD TEXT === */
+  .download__text {
+    transform: translate(0px, 65%);
+  }
+
+  /* === DOWNLOAD BUTTON === */
+  .download__button {
+    transform: translate(0px, 50%);
+  }
+
+  /* ============== FOOTER ============== */
+
+  /* === BLOCK-INFO HEADLINES === */
+  .block-info__headlines {
+    transform: translate(0px, 100%);
+  }
+
+  /* === INFO TEXT AFTER HEADLINES === */
+  .block-info__locationText,
+  .block-info__aboutText {
+    transform: translate(0px, 15px);
+  }
+}
+
+@media (max-width: 545px) {
+  ._show-anim-below {
+    transform: translate(0px, 50%);
+  }
+
+  /* ============== INTRO ============== */
+  .intro__text {
+    transform: translate(0px, 50%);
+  }
+  .button-block {
+    transform: translate(0px, 40%);
+  }
+
+  /* ============== FEATURES ============== */
+
+  /* === PHOTO ANIMATIONS === */
+  .features__inner .features-item:nth-of-type(1) img._active-anim,
+  .features__inner .features-item:nth-of-type(3) img._active-anim,
+  .features__inner .features-item:nth-of-type(5) img._active-anim {
+    transition: all 0.8s ease 0.5s;
+  }
+  .features__inner .features-item:nth-of-type(2) img._active-anim,
+  .features__inner .features-item:nth-of-type(4) img._active-anim,
+  .features__inner .features-item:nth-of-type(6) img._active-anim {
+    transition: all 0.8s ease 1.25s;
+  }
+
+  /* === FEATURE NAME === */
+  .feature__name {
+    transform: translate(0px, 90%);
+  }
+
+  .features__inner .features-item:nth-of-type(1) .feature__name._active-anim,
+  .features__inner .features-item:nth-of-type(3) .feature__name._active-anim,
+  .features__inner .features-item:nth-of-type(5) .feature__name._active-anim {
+    transition: all 0.8s ease 0.65s;
+  }
+  .features__inner .features-item:nth-of-type(2) .feature__name._active-anim,
+  .features__inner .features-item:nth-of-type(4) .feature__name._active-anim,
+  .features__inner .features-item:nth-of-type(6) .feature__name._active-anim {
+    transition: all 0.8s ease 1.35s;
+  }
+
+  /* === FEATURE TEXT === */
+  .features__inner .features-item:nth-of-type(1) .feature__text._active-anim,
+  .features__inner .features-item:nth-of-type(3) .feature__text._active-anim,
+  .features__inner .features-item:nth-of-type(5) .feature__text._active-anim {
+    transition: 2.4s ease 0.7s;
+  }
+  .features__inner .features-item:nth-of-type(2) .feature__text._active-anim,
+  .features__inner .features-item:nth-of-type(4) .feature__text._active-anim,
+  .features__inner .features-item:nth-of-type(6) .feature__text._active-anim {
+    transition: 2.4s ease 1.4s;
+  }
+
+  /* ============== TEAM ============== */
+
+  /* === TEAM PHOTO === */
+  .team-mainPart > .team__item:nth-child(1) .team__photo._active-anim,
+  .team-mainPart > .team__item:nth-child(3) .team__photo._active-anim {
+    transition: all 1s ease 0.3s;
+  }
+  .team-mainPart > .team__item:nth-child(2) .team__photo._active-anim,
+  .team-mainPart > .team__item:nth-child(4) .team__photo._active-anim {
+    transition: all 1s ease 1.05s;
+  }
+
+  /* === TEAM PEOPLE-NAME === */
+  .team__people-name {
+    transform: translate(0px, 20px);
+  }
+
+  /* === PEOPLE WORK === */
+  .people-work {
+    transform: translate(0px, 15px);
+  }
+
+  /* === TEAM TEXT === */
+  .team__text {
+    transform: translate(0px, 12.5%);
+  }
+
+  /* === TEAM SOCIAL === */
+  .team-mainPart > .team__item:nth-child(2) .team__social._active-anim,
+  .team-mainPart > .team__item:nth-child(4) .team__social._active-anim {
     transition: 3s ease 1.75s;
+  }
+
+  /* ============== DOWNLOAD ============== */
+
+  /* === DOWNLOAD TITLE === */
+  .download__title {
+    transform: translate(0px, -110%);
+  }
+
+  /* === DOWNLOAD TEXT === */
+  .download__text {
+    transform: translate(0px, 55%);
+  }
+
+  /* === DOWNLOAD BUTTON === */
+  .download__button {
+    transform: translate(0px, 50%);
+  }
+
+  /* ============== FOOTER ============== */
+
+  /* === BLOCK-INFO HEADLINES === */
+  .block-info__headlines {
+    transform: translate(0px, 90%);
+  }
+
+  /* === INFO TEXT AFTER HEADLINES === */
+  .block-info__locationText,
+  .block-info__aboutText {
+    transform: translate(0px, 10px);
+  }
+
+  /* === SITE CREATION INFORMATION === */
+  .siteCreation__text._active-anim .font-change,
+  .siteCreation__text._active-anim .color-change {
+    transition: color 1s ease 2s;
+  }
+}
+
+@media (max-width: 393px) {
+  /* ============== DOWNLOAD ============== */
+
+  /* === DOWNLOAD TITLE === */
+  .download__title {
+    transform: translate(0px, -70%);
+  }
+
+  /* === DOWNLOAD TEXT === */
+  .download__text {
+    transform: translate(0px, 50%);
+  }
+
+  /* === DOWNLOAD BUTTON === */
+  .download__button._active-anim {
+    transition: all 1s ease 0.8s;
+  }
+}
+
+@media (max-width: 321px) {
+  /* ============== FEATURES ============== */
+
+  /* === PHOTO ANIMATIONS === */
+  .features__inner .features-item:nth-of-type(1) img._active-anim,
+  .features__inner .features-item:nth-of-type(3) img._active-anim,
+  .features__inner .features-item:nth-of-type(5) img._active-anim {
+    transition: all 0.7s ease 0.5s;
+  }
+  .features__inner .features-item:nth-of-type(2) img._active-anim,
+  .features__inner .features-item:nth-of-type(4) img._active-anim,
+  .features__inner .features-item:nth-of-type(6) img._active-anim {
+    transition: all 0.7s ease 1.15s;
+  }
+
+  /* === FEATURE NAME === */
+  .feature__name {
+    transform: translate(0px, 75%);
+  }
+
+  .features__inner .features-item:nth-of-type(1) .feature__name._active-anim,
+  .features__inner .features-item:nth-of-type(3) .feature__name._active-anim,
+  .features__inner .features-item:nth-of-type(5) .feature__name._active-anim {
+    transition: all 0.8s ease 0.55s;
+  }
+  .features__inner .features-item:nth-of-type(2) .feature__name._active-anim,
+  .features__inner .features-item:nth-of-type(4) .feature__name._active-anim,
+  .features__inner .features-item:nth-of-type(6) .feature__name._active-anim {
+    transition: all 0.8s ease 1.2s;
+  }
+
+  /* === FEATURE TEXT === */
+  .features__inner .features-item:nth-of-type(1) .feature__text._active-anim,
+  .features__inner .features-item:nth-of-type(3) .feature__text._active-anim,
+  .features__inner .features-item:nth-of-type(5) .feature__text._active-anim {
+    transition: 2.4s ease 0.6s;
+  }
+  .features__inner .features-item:nth-of-type(2) .feature__text._active-anim,
+  .features__inner .features-item:nth-of-type(4) .feature__text._active-anim,
+  .features__inner .features-item:nth-of-type(6) .feature__text._active-anim {
+    transition: 2.4s ease 1.25s;
+  }
+
+  /* ============== TEAM ============== */
+
+  /* === TEAM PHOTO === */
+  .team-mainPart > .team__item:nth-child(1) .team__photo._active-anim,
+  .team-mainPart > .team__item:nth-child(3) .team__photo._active-anim {
+    transition: all 0.7s ease 0.3s;
+  }
+  .team-mainPart > .team__item:nth-child(2) .team__photo._active-anim,
+  .team-mainPart > .team__item:nth-child(4) .team__photo._active-anim {
+    transition: all 0.7s ease 1.05s;
+  }
+
+  /* === TEAM PEOPLE-NAME === */
+  .team-mainPart > .team__item:nth-child(1) .team__people-name._active-anim,
+  .team-mainPart > .team__item:nth-child(3) .team__people-name._active-anim {
+    transition: all 0.75s ease 0.3s;
+  }
+  .team-mainPart > .team__item:nth-child(2) .team__people-name._active-anim,
+  .team-mainPart > .team__item:nth-child(4) .team__people-name._active-anim {
+    transition: all 0.75s ease 0.95s;
+  }
+
+  /* === PEOPLE WORK === */
+  .people-work {
+    transform: translate(0px, 10px);
+  }
+  .team-mainPart > .team__item:nth-child(1) .people-work._active-anim,
+  .team-mainPart > .team__item:nth-child(3) .people-work._active-anim {
+    transition: all 0.75s ease 0.45s;
+  }
+  .team-mainPart > .team__item:nth-child(2) .people-work._active-anim,
+  .team-mainPart > .team__item:nth-child(4) .people-work._active-anim {
+    transition: all 0.75s ease 1.05s;
+  }
+
+  /* === TEAM TEXT === */
+  .team-mainPart > .team__item:nth-child(1) .team__text._active-anim,
+  .team-mainPart > .team__item:nth-child(3) .team__text._active-anim {
+    transition: all 0.7s ease 0.55s;
+  }
+  .team-mainPart > .team__item:nth-child(2) .team__text._active-anim,
+  .team-mainPart > .team__item:nth-child(4) .team__text._active-anim {
+    transition: all 0.7s ease 1.15s;
+  }
+
+  /* === TEAM SOCIAL === */
+  .team-mainPart > .team__item:nth-child(1) .team__social._active-anim,
+  .team-mainPart > .team__item:nth-child(3) .team__social._active-anim {
+    transition: 2.8s ease 0.9s;
+  }
+  .team-mainPart > .team__item:nth-child(2) .team__social._active-anim,
+  .team-mainPart > .team__item:nth-child(4) .team__social._active-anim {
+    transition: 2.8s ease 1.6s;
+  }
+
+  /* ============== DOWNLOAD ============== */
+
+  /* === DOWNLOAD TITLE === */
+  .download__title {
+    transform: translate(0px, -65%);
+  }
+
+  /* === DOWNLOAD TEXT === */
+  .download__text {
+    transform: translate(0px, 50%);
+  }
+
+  /* === DOWNLOAD BUTTON === */
+  .download__button._active-anim {
+    transition: all 0.8s ease 0.8s;
+  }
+
+  /* ============== FOOTER ============== */
+
+  /* === BLOCK-INFO HEADLINES === */
+  .block-info__headlines {
+    transform: translate(0px, 15px);
   }
 }
