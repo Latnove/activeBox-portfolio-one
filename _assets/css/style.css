@@ -33,9 +33,11 @@ p {
   max-width: 1170px;
   margin: 0 auto;
 }
+a {
+  text-decoration: none;
+}
 
-/*  firstBlock 
-===================*/
+/* ============== HEADER AND INTRO ==============*/
 
 .header {
   width: 100%;
@@ -158,24 +160,26 @@ p {
 }
 
 .btn--red {
-  display: block;
-
   width: 15.38em;
   height: 3.538em;
   background-color: #e84545;
+
+  display: flex;
 }
 
-.btn--red p {
+.btn--red span {
   font-size: 13px;
   line-height: 1.62em;
   font-weight: 600;
   text-align: center;
   color: #fff;
-  margin: 0 auto;
+
+  margin: auto;
+  align-items: center;
+  flex-direction: column;
 }
 
-/*  SecondBlock 
-===================*/
+/* ============== FEATURES ============== */
 
 .features__inner {
   font-size: inherit;
@@ -214,8 +218,7 @@ p {
   text-align: center;
 }
 
-/*  thirdBlock 
-===================*/
+/* ============== WORKS ============== */
 
 #works {
   display: flex;
@@ -282,8 +285,7 @@ p {
   margin-top: 0.528em;
 }
 
-/*  fourthBlock
-===================*/
+/* ============== TEAM ============== */
 
 .team-mainPart {
   display: flex;
@@ -368,8 +370,7 @@ p {
   fill: #311e85;
 }
 
-/*  fifthBlock
-===================*/
+/* ============== REVIEWS ============== */
 
 #reviews {
   position: relative;
@@ -464,8 +465,7 @@ p {
   opacity: 1;
 }
 
-/*  sixthBlock
-===================*/
+/* ============== DOWNLOAD ============== */
 
 .download__inner {
   display: flex;
@@ -495,30 +495,31 @@ p {
   margin: 1.23em auto 3.076em;
 }
 
-.download__button {
-  margin-bottom: 6.25em;
-  user-select: none;
-}
-
 .btn--long {
+  margin-bottom: 6.25em;
   font-size: inherit;
   width: 17.5em;
   height: 2.875em;
   background-color: #e84545;
+  user-select: none;
+  text-decoration: none;
+
+  display: flex;
 }
 
-.btn--long p {
+.btn--long span {
   font-family: 'Raleway';
   font-size: 13px;
   line-height: 1.615em;
   font-weight: 600;
   text-transform: uppercase;
-
   color: #ffffff;
+
+  align-items: center;
+  margin: auto;
 }
 
-/*  footerBlock
-===================*/
+/* ============== FOOTER ============== */
 
 .block-info {
   width: 100%;

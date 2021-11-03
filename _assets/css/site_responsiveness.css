@@ -1,5 +1,5 @@
 @media (max-width: 1651px) {
-  /* WorksBlock */
+  /* ============== WORKS ============== */
   .works__item {
     height: 272.5px;
   }
@@ -11,7 +11,7 @@
     font-size: 14px;
   }
 
-  /* FirstBlock */
+  /* ============== HEADER AND INTRO ============== */
   .header__inner img {
     padding-left: 1.5em;
   }
@@ -39,7 +39,7 @@
     padding-bottom: 8.2em;
   }
 
-  /* SecondBlock */
+  /* ============== FEATURES ============== */
   .features-item {
     margin-top: 6em;
   }
@@ -51,12 +51,12 @@
     margin-top: 1.38em;
   }
 
-  /* ThirdBlock */
+  /* ============== WORKS ============== */
   .works__item {
     height: 16em;
   }
 
-  /* FourthBlock */
+  /* ============== TEAM ============== */
   .team-mainPart {
     justify-content: space-around;
     height: 43.75em;
@@ -83,7 +83,7 @@
     font-size: 12.3px;
   }
 
-  /* FifthBlock */
+  /* ============== REVIEWS ============== */
   .reviews__photo {
     width: 55%;
     height: 27.5em;
@@ -112,7 +112,7 @@
     bottom: 3.95em;
   }
 
-  /* SixthBlock */
+  /* ============== DOWNLOAD ============== */
   .download__inner {
     padding-top: 5em;
   }
@@ -124,15 +124,14 @@
   }
   .btn--long {
     height: 3em;
-  }
-  .btn--long p {
-    font-size: 12px;
-  }
-  .download__button {
+
     margin-bottom: 5.175em;
   }
+  .btn--long span {
+    font-size: 12px;
+  }
 
-  /* footerBlock */
+  /* ============== FOOTER ============== */
   .block-info {
     height: 13.575em;
   }
@@ -163,7 +162,7 @@
     font-size: 13px;
   }
 
-  /* FirstBlock */
+  /* ============== HEADER AND INTRO ============== */
   .navigation {
     width: 60%;
     justify-content: space-between;
@@ -197,7 +196,7 @@
     padding-top: 11em;
   }
 
-  /* SecondBlock */
+  /* ============== FEATURES ============== */
   .features-item {
     margin-top: 5em;
   }
@@ -212,7 +211,7 @@
     margin-top: 1.1em;
   }
 
-  /* ThirdBlock */
+  /* ============== WORKS ============== */
   .works__item {
     width: 33.33333%;
     height: 16em;
@@ -229,7 +228,7 @@
     border-right: 1px solid #fff;
   }
 
-  /* FourthBlock */
+  /* ============== TEAM ============== */
   .team-mainPart {
     justify-content: space-around;
     flex-wrap: wrap;
@@ -276,7 +275,7 @@
     justify-content: center;
   }
 
-  /* FifthBlock */
+  /* ============== REVIEWS ============== */
   #reviews {
     background-color: #f8f8d9;
   }
@@ -300,7 +299,7 @@
     bottom: 3.9em;
   }
 
-  /* SixthBlock */
+  /* ============== DOWNLOAD ============== */
   .download__inner {
     padding-top: 4em;
   }
@@ -310,19 +309,18 @@
   .download__text {
     margin-bottom: 2.5em;
   }
-  .download__button {
-    margin-bottom: 4.3em;
-  }
   .btn--long {
     width: 14.5em;
     height: 2.85em;
+
+    margin-bottom: 4.3em;
     /* коэффициент 5.087 */
   }
-  .btn--long p {
+  .btn--long span {
     font-size: 11.5px;
   }
 
-  /* footerBlock */
+  /* ============== FOOTER ============== */
   .block-info__group {
     padding-top: 3em;
   }
@@ -358,7 +356,7 @@
     font-size: 12px;
   }
 
-  /* FirstBlock */
+  /* ============== HEADER AND INTRO ============== */
   .header {
     height: 5.65em;
   }
@@ -393,14 +391,14 @@
     width: 12em;
     height: 2.75em;
   }
-  .btn--red p {
-    font-size: 11px;
+  .btn--red span {
+    font-size: 10px;
   }
   .intro {
     padding-top: 9.4em;
   }
 
-  /* SecondBlock */
+  /* ============== FEATURES ============== */
   .features-item {
     margin-top: 4.2em;
   }
@@ -414,12 +412,12 @@
     margin-top: 1em;
   }
 
-  /* ThirdBlock */
+  /* ============== WORKS ============== */
   .works__item {
     height: 13.3em;
   }
 
-  /* FourthBlock */
+  /* ============== TEAM ============== */
   .team__photo {
     height: 15em;
     width: 15em;
@@ -445,7 +443,7 @@
     margin-bottom: 3.8em;
   }
 
-  /* FifthBlock */
+  /* ============== REVIEWS ============== */
   .reviews__photo {
     width: 100%;
     height: 24em;
@@ -471,7 +469,7 @@
     bottom: 3.5em;
   }
 
-  /* SixthBlock */
+  /* ============== DOWNLOAD ============== */
   .download__inner {
     padding-top: 3.6em;
   }
@@ -482,14 +480,14 @@
     font-size: 11px;
     margin-bottom: 2.4em;
   }
-  .download__button {
+  .btn--long {
     margin-bottom: 3.5em;
   }
-  .btn--long p {
+  .btn--long span {
     font-size: 11px;
   }
 
-  /* FooterBlock */
+  /* ============== FOOTER ============== */
   .block-info {
     height: auto;
   }
@@ -526,7 +524,7 @@
     font-size: 11px;
   }
 
-  /* FirstBlock */
+  /* ============== HEADER AND INTRO ============== */
   .header__inner img {
     width: 162px;
   }
@@ -571,14 +569,14 @@
     width: 9.9em;
     height: 2.26em;
   }
-  .btn--red p {
-    font-size: 10px;
+  .btn--red span {
+    font-size: 8.9px;
   }
   .intro {
     padding-top: 5.5em;
   }
 
-  /* SecondBlock */
+  /* ============== FEATURES ============== */
   .features-item {
     width: 50%;
     margin-top: 3.5em;
@@ -594,7 +592,7 @@
     margin-top: 0.8em;
   }
 
-  /* ThirdBlock */
+  /* ============== WORKS ============== */
   .works__item {
     width: 50%;
     height: 14.2em;
@@ -613,7 +611,7 @@
     font-size: 11.5px;
   }
 
-  /* FourthBlock */
+  /* ============== TEAM ============== */
   .team__item {
     margin-top: 3.7em;
   }
@@ -648,7 +646,7 @@
     padding-bottom: 3.4em;
   }
 
-  /* FifthBlock */
+  /* ============== REVIEWS ============== */
   .reviews__photo {
     height: 21.3em;
   }
@@ -676,7 +674,7 @@
     height: 0.64em;
   }
 
-  /* SixthBlock */
+  /* ============== DOWNLOAD ============== */
   .download__inner {
     padding-top: 2.4em;
   }
@@ -693,18 +691,17 @@
     margin-top: 0.9em;
     margin-bottom: 1.55em;
   }
-  .download__button {
-    margin-bottom: 2.75em;
-  }
   .btn--long {
     width: 12.8em;
     height: 2.55em;
+
+    margin-bottom: 2.75em;
   }
-  .btn--long p {
-    font-size: 9.5px;
+  .btn--long span {
+    font-size: 8px;
   }
 
-  /* FooterBlock */
+  /* ============== FOOTER ============== */
   .block-info__group {
     padding-top: 1.9em;
   }
@@ -741,12 +738,12 @@
 }
 
 @media (max-width: 421px) {
-  /* ThirdBlock */
+  /* ============== WORKS ============== */
   .works__item {
     height: 11.4em;
   }
 
-  /* FourthBlock */
+  /* ============== TEAM ============== */
   .team__photo {
     height: 12.8em;
     width: 12.8em;
@@ -761,7 +758,7 @@
     font-size: 10.6px;
   }
 
-  /* FifthBlock */
+  /* ============== REVIEWS ============== */
   #reviews {
     background: none;
   }
@@ -797,7 +794,7 @@
     bottom: 2.6em;
   }
 
-  /* SixthBlock */
+  /* ============== DOWNLOAD ============== */
   .download__title {
     font-size: 15px;
   }
@@ -805,17 +802,12 @@
     width: 12em;
     height: 2.359em;
   }
-  .btn--long p {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
+  .btn--long span {
     font-size: 9px;
-    margin: auto;
     line-height: 0;
   }
 
-  /* FooterBlock */
+  /* ============== FOOTER ============== */
   .block-info__group {
     padding-top: 1.6em;
   }
@@ -860,7 +852,7 @@
     font-size: 9px;
   }
 
-  /* FirstBlock */
+  /* ============== HEADER AND INTRO ============== */
   .header__inner {
     padding-top: 1.5em;
   }
@@ -909,14 +901,14 @@
     width: 7.6em;
     height: 1.74em;
   }
-  .btn--red p {
+  .btn--red span {
     font-size: 7.4px;
   }
   .intro {
     padding-top: 5.3em;
   }
 
-  /* SecondBlock */
+  /* ============== FEATURES ============== */
   .features-item {
     margin-top: 2.8em;
   }
@@ -930,7 +922,7 @@
     padding-bottom: 0;
   }
 
-  /* ThirdBlock */
+  /* ============== WORKS ============== */
   .works__item {
     height: 10.6em;
   }
@@ -941,7 +933,7 @@
     font-size: 9.6px;
   }
 
-  /* FourthBlock */
+  /* ============== TEAM ============== */
   .team__item {
     margin-top: 3.25em;
   }
@@ -972,7 +964,7 @@
     padding-bottom: 2.9em;
   }
 
-  /* FifthBlock */
+  /* ============== REVIEWS ============== */
   .reviews__photo {
     height: 15em;
   }
@@ -1000,7 +992,7 @@
     width: 96%;
   }
 
-  /* SixthBlock */
+  /* ============== DOWNLOAD ============== */
   .download__inner {
     padding-top: 1.9em;
   }
@@ -1018,15 +1010,14 @@
   .btn--long {
     width: 9.9em;
     height: 2.2em;
-  }
-  .btn--long p {
-    font-size: 6.5px;
-  }
-  .download__button {
+
     margin-bottom: 2.1em;
   }
+  .btn--long span {
+    font-size: 6px;
+  }
 
-  /* FooterBlock */
+  /* ============== FOOTER ============== */
   .block-info__group {
     padding-top: 1.7em;
   }
@@ -1072,13 +1063,13 @@
 }
 
 @media (max-width: 276px) {
-  /* FirstBlock */
+  /* ============== HEADER AND INTRO ============== */
   .intro__title {
     width: 90%;
     font-size: 19px;
   }
 
-  /* FifthBlock */
+  /* ============== REVIEWS ============== */
   .reviews__content {
     height: 17.8em;
   }
