@@ -39,7 +39,7 @@ function clickCheck() {
 
     if (indexActiveReview < reviewItems.length - 1) {
       for (i = 0; i < reviewItems.length - 1; i++) {
-        if (reviewItems[i].classList.contains('review__active') == true) {
+        if (reviewItems[i].classList.contains('_review__active') == true) {
           indexActiveReview = ++i
 
           break
@@ -58,13 +58,9 @@ function clickCheck() {
 function changeReviewClass() {
   fullClickOnReview = true
   for (i = reviewItems.length - 1; i >= 0; i--) {
-    if (reviewItems[i].classList.contains('review__active')) {
-      reviewItems[i].classList.remove('review__active')
-      reviewsNavigation[i].classList.remove('active-point')
-
-      reviewItems[indexActiveReview].classList.add('review__active')
-      reviewsNavigation[indexActiveReview].classList.add('active-point')
-
+    if (reviewItems[i].classList.contains('_review__active')) {
+      reviewItems[i].classList.remove('_review__active')
+      reviewItems[indexActiveReview].classList.add('_review__active')
       fullClickOnReview = false
       break
     }
