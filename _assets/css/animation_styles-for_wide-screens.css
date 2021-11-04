@@ -328,7 +328,7 @@ pacity: 1; */
 .block-info__locationText,
 .block-info__aboutText {
   opacity: 0;
-  transform: translate(0px, 50%);
+  transform: translate(0px, 30px);
 }
 .block-info__locationText._active-anim,
 .block-info__aboutText._active-anim {
