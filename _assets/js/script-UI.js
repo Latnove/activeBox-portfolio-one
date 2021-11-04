@@ -1,9 +1,12 @@
+// Features
 const featuresItem = document.querySelectorAll('.features-item')
 const featuresImage = document.querySelectorAll('.features-item img')
+
+// TeamSocialIcons
 const teamSocialIcon = document.querySelectorAll('.social__icon')
-const footerIcons = document.querySelectorAll('.share__links svg')
 
 // FooterIcons
+const footerIcons = document.querySelectorAll('.share__links svg')
 const iconHeightFooter = []
 const iconWidthFooter = []
 let iconSizeReaded = false
