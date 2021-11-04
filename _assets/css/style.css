@@ -23,7 +23,7 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 0px;
+  margin: 0;
 }
 p {
   margin: 0;
@@ -238,7 +238,7 @@ a {
 
 .works__item:nth-of-type(4),
 .works__item:last-child {
-  border-right: 0px;
+  border-right: 0;
 }
 
 .works__item:hover .works__content {
@@ -668,7 +668,7 @@ a {
   z-index: 1;
 }
 .burger__menu:hover {
-  width: 1;
+  width: 1px;
 }
 .burger__menu span::before,
 .burger__menu span,
@@ -686,11 +686,11 @@ a {
 }
 .burger__menu span::before {
   content: '';
-  right: 0px;
+  right: 0;
   top: -8px;
 }
 .burger__menu span::after {
   content: '';
-  right: 0px;
+  right: 0;
   top: 8px;
 }
