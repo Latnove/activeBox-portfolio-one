@@ -1,3 +1,6 @@
+const reviewItems = document.querySelectorAll('.reviews__item')
+
+let indexActiveReview = 0
 let fullClickOnReview = false
 let updateReviewAft // setInterval
 let skipСlick // setTimeout
