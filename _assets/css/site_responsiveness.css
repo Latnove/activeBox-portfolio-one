@@ -59,7 +59,6 @@
   /* ============== TEAM ============== */
   .team-mainPart {
     justify-content: space-around;
-    height: 43.75em;
   }
   .team__item {
     margin-top: 5.8em;
@@ -81,6 +80,9 @@
   .team__text {
     width: 17em;
     font-size: 12.3px;
+  }
+  .team__social {
+    padding-bottom: 4.25em;
   }
 
   /* ============== REVIEWS ============== */
@@ -132,9 +134,6 @@
   }
 
   /* ============== FOOTER ============== */
-  .block-info {
-    height: 13.575em;
-  }
   .block-info__group {
     padding-top: 3.875em;
   }
@@ -147,6 +146,7 @@
   }
   .block-info__aboutText {
     width: 22em;
+    padding-bottom: 4em;
   }
   .siteCreation__text {
     font-size: 13px;
@@ -194,6 +194,7 @@
   }
   .intro {
     padding-top: 11em;
+    padding-bottom: 7.2em;
   }
 
   /* ============== FEATURES ============== */
@@ -227,12 +228,15 @@
   .works__item:nth-of-type(4) {
     border-right: 1px solid #fff;
   }
+  .works__title,
+  .works__text {
+    font-size: 12px;
+  }
 
   /* ============== TEAM ============== */
   .team-mainPart {
     justify-content: space-around;
     flex-wrap: wrap;
-    height: auto;
   }
   .team__item {
     width: 50%;
@@ -271,7 +275,8 @@
   }
   .team__social {
     display: flex;
-    margin: 1.6em auto 4em;
+    margin: 1.6em auto 0;
+    padding-bottom: 4em;
     justify-content: center;
   }
 
@@ -333,13 +338,11 @@
   }
   .block-info__aboutText {
     width: 93%;
+    padding-bottom: 3.25em;
   }
   .share__links a {
     width: 2.4em;
     height: 2.4em;
-  }
-  .block-info {
-    height: 12.5em;
   }
   .siteCreation__text {
     font-size: 12.5px;
@@ -396,6 +399,7 @@
   }
   .intro {
     padding-top: 9.4em;
+    padding-bottom: 5.6em;
   }
 
   /* ============== FEATURES ============== */
@@ -415,6 +419,10 @@
   /* ============== WORKS ============== */
   .works__item {
     height: 13.3em;
+  }
+  .works__title,
+  .works__text {
+    font-size: 11px;
   }
 
   /* ============== TEAM ============== */
@@ -440,7 +448,7 @@
   }
   .team__social {
     margin-top: 1.2em;
-    margin-bottom: 3.8em;
+    padding-bottom: 3.8em;
   }
 
   /* ============== REVIEWS ============== */
@@ -488,9 +496,6 @@
   }
 
   /* ============== FOOTER ============== */
-  .block-info {
-    height: auto;
-  }
   .block-info__group {
     padding-top: 2.5em;
   }
@@ -563,7 +568,6 @@
   }
   .button-block {
     margin-top: 1.8em;
-    padding-bottom: 3.65em;
   }
   .btn--red {
     width: 9.9em;
@@ -574,6 +578,7 @@
   }
   .intro {
     padding-top: 5.5em;
+    padding-bottom: 4.4em;
   }
 
   /* ============== FEATURES ============== */
@@ -629,9 +634,6 @@
     width: 80%;
     max-width: 18em;
   }
-  .team__social {
-    margin-top: 1.1em;
-  }
   .team__item:first-child .team__social,
   .team__item:nth-of-type(2) .team__social {
     margin-bottom: 0;
@@ -642,7 +644,7 @@
     padding-top: 3.3em;
   }
   .team__social {
-    margin-bottom: 0;
+    margin-top: 1.1em;
     padding-bottom: 3.4em;
   }
 
@@ -738,6 +740,12 @@
 }
 
 @media (max-width: 421px) {
+  /* ============== HEADER AND INTRO ============== */
+  .intro {
+    padding-top: 5.5em;
+    padding-bottom: 4.2em;
+  }
+
   /* ============== WORKS ============== */
   .works__item {
     height: 11.4em;
@@ -892,7 +900,6 @@
   }
   .button-block {
     margin-top: 1.5em;
-    padding-bottom: 3em;
   }
   .btn--red {
     width: 7.6em;
@@ -903,6 +910,7 @@
   }
   .intro {
     padding-top: 5.3em;
+    padding-bottom: 3.7em;
   }
 
   /* ============== FEATURES ============== */
@@ -923,11 +931,9 @@
   .works__item {
     height: 10.6em;
   }
-  .works__title {
-    font-size: 9.6px;
-  }
+  .works__title,
   .works__text {
-    font-size: 9.6px;
+    font-size: 8px;
   }
 
   /* ============== TEAM ============== */
