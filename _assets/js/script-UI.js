@@ -80,6 +80,9 @@ function featuresImageChange(width, height) {
     } else if (window.matchMedia('(max-width: 421px)').matches) {
       image.style.width = width * 0.68 + 'px'
       image.style.height = height * 0.68 + 'px'
+    } else if (window.matchMedia('(max-width: 545px)').matches) {
+      image.style.width = width * 0.72 + 'px'
+      image.style.height = height * 0.72 + 'px'
     } else if (window.matchMedia('(max-width: 769px)').matches) {
       image.style.width = width * 0.8 + 'px'
       image.style.height = height * 0.8 + 'px'
