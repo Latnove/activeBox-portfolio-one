@@ -1,11 +1,7 @@
 const header = document.querySelector('.header')
 const navLinks = document.querySelectorAll('.navigation__link')
 const logoAnchor = document.querySelector('.logoAnchor')
-const reviewsNavigation = document.querySelectorAll('.slicks-dots span')
-const reviewItems = document.querySelectorAll('.reviews__item')
 
-let indexActiveReview = 0
-let numberNavClicks = 0 // решить проблему с nav links
 let posForLinks = new Array()
 let scrollTarget = null
 let activeNavLink = null
