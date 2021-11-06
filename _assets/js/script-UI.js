@@ -31,16 +31,16 @@ function windowResizing() {
     if (i === 3 || i === 4 || i === 5) {
       if (window.matchMedia('(max-width: 769px)').matches) {
         featuresItem[i].style.marginTop = '2.6em'
-        featuresItem[i].style.paddingBottom = '3.1em'
+        featuresItem[i].style.paddingBottom = '3.4em'
       } else if (window.matchMedia('(max-width: 993px)').matches) {
         featuresItem[i].style.marginTop = '2.9em'
-        featuresItem[i].style.paddingBottom = '3.575em'
+        featuresItem[i].style.paddingBottom = '3.8em'
       } else if (window.matchMedia('(max-width: 1201px)').matches) {
-        featuresItem[i].style.marginTop = '3.25em'
-        featuresItem[i].style.paddingBottom = '4.25em'
+        featuresItem[i].style.marginTop = '3em'
+        featuresItem[i].style.paddingBottom = '4.75em'
       } else if (window.matchMedia('(min-width: 1202px)').matches) {
         featuresItem[i].style.marginTop = '3.625em'
-        featuresItem[i].style.paddingBottom = '4.625em'
+        featuresItem[i].style.paddingBottom = '6.75em'
       }
     }
   }
