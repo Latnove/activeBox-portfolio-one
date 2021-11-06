@@ -1,7 +1,3 @@
-html {
-  overflow-x: hidden;
-}
-
 body {
   font-family: 'Raleway';
   font-size: 16px;
@@ -9,6 +5,11 @@ body {
   background-color: #fff;
   -webkit-font-smoothing: antialiased;
   margin: 0;
+
+  overflow-x: hidden;
+}
+body._lock {
+  overflow: hidden;
 }
 
 *,
@@ -34,83 +35,112 @@ p {
   width: 100%;
   max-width: 1170px;
   margin: 0 auto;
+  padding: 0 11px;
 }
 a {
   text-decoration: none;
 }
 
-/* ============== HEADER AND INTRO ==============*/
-
+/* ============== HEADER ============== */
 .header {
   width: 100%;
-  height: 6.25em;
-  font-size: inherit;
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /* Чтобы убрать синий фон при клике на элемент*/
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 50;
+}
+
+.header::before {
+  content: '';
+  width: 100%;
+  height: 100%;
 
   position: absolute;
-  left: 0;
   top: 0;
-  z-index: 1000;
-  margin: 0 auto;
-
-  user-select: none;
-}
-
-.headerScroll {
-  background-color: #30344e;
-  position: fixed;
   left: 0;
+  z-index: 2;
 }
 
-.header__inner {
+.header._header-scroll::before,
+.header._click-on-the-burger::before {
+  background-color: #30344e;
+}
+
+.header._header-scroll .container .grayLine {
+  border-bottom: solid 0px #505269;
+}
+
+.header__body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 2.25em;
-  font-size: inherit;
+  height: 100px;
+  width: 100%;
+  position: relative;
 }
 
-.logoAnchor {
+.header__body img {
+  position: relative;
+  z-index: 3;
+}
+
+._header__logo {
   cursor: pointer;
 }
 
-.headerScroll .grayLine {
-  border-bottom: none;
-}
-
-.grayLine {
-  border-bottom: solid 1px #505269;
-  padding-top: 2.375em;
-}
-
-.navigation {
-  display: flex;
-  text-transform: uppercase;
-  justify-content: space-between;
+/* navigation - ссылок для перехода к блокам */
+.header__menu {
   width: 50%;
-  font-size: 13px;
-  font-family: 'Raleway';
-  font-weight: 700;
 }
 
-.navigation__link {
+.header__list {
+  display: flex;
+
+  position: relative;
+  z-index: 2;
+
+  padding: 0;
+  justify-content: space-between;
+}
+
+.header__list li {
+  list-style: none;
+  padding: 0;
+}
+
+.header__list li:first-of-type {
+  margin-left: 0;
+}
+
+.header__link {
   color: #fff;
+  font-weight: 700;
+  font-size: 13px;
+  text-transform: uppercase;
   text-decoration: none;
   opacity: 0.74;
-
-  transition: opacity 0.1s linear;
-  cursor: pointer;
 }
 
-.active {
-  opacity: 1;
-  border-bottom: 2px solid #66697e;
-  padding-bottom: 0.3em;
-}
-
-.navigation__link:hover {
+.header__link:hover {
   opacity: 1;
 }
+.grayLine {
+  border-bottom: solid 1px #505269;
+  text-align: center;
+  margin: 0 auto;
+}
 
+.header__burger {
+  display: none;
+}
+/* ----------------------------------------- */
+/* Menu burger расписан в скрипте site_responsiveness.css - (max-width: 993px) */
+/* ----------------------------------------- */
+
+/* ============== INTRO ============== */
 .intro {
   position: relative;
   width: 100%;
@@ -121,6 +151,7 @@ a {
   padding-top: 15.5em;
   padding-bottom: 9.75em;
 }
+
 .intro__inner {
   display: flex;
   flex-direction: column;
@@ -437,7 +468,7 @@ a {
   color: #ffffff;
 
   text-align: left;
-  padding-top: 2.416em; /**/
+  padding-top: 2.416em;
   padding-left: 2.361em;
 
   width: 16.38em;
@@ -454,7 +485,7 @@ a {
   padding-left: 6.538em;
   margin-top: 2.307em;
 
-  padding-bottom: 115px; /**/
+  padding-bottom: 115px;
 }
 
 .slicks-dots {
@@ -462,7 +493,6 @@ a {
   position: absolute;
   bottom: 70px;
   left: 289px;
-  /**/
 }
 
 .slicks-dots span {
@@ -652,45 +682,4 @@ a {
   justify-content: center;
 
   padding: 1.8125em 0;
-}
-
-.burger__menu {
-  display: none;
-  position: fixed;
-  text-align: center;
-
-  right: 0;
-  margin-right: 19px;
-
-  width: 30px;
-
-  cursor: pointer;
-  z-index: 1;
-}
-.burger__menu:hover {
-  width: 1px;
-}
-.burger__menu span::before,
-.burger__menu span,
-.burger__menu span::after {
-  display: block;
-  content: '';
-  position: absolute;
-
-  border: none;
-  outline: none;
-
-  width: 100%;
-  height: 2.22px;
-  background-color: #fff;
-}
-.burger__menu span::before {
-  content: '';
-  right: 0;
-  top: -8px;
-}
-.burger__menu span::after {
-  content: '';
-  right: 0;
-  top: 8px;
 }

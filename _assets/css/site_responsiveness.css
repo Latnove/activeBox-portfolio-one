@@ -10,21 +10,14 @@
   body {
     font-size: 14px;
   }
-
-  /* ============== HEADER AND INTRO ============== */
-  .header__inner img {
-    padding-left: 1.5em;
+  .container {
+    max-width: 970px;
   }
-  .navigation {
-    width: 52%;
+  /* ============== HEADER ============== */
+  .header__menu {
+    width: 60%;
   }
-  .navigation__link:last-child {
-    margin-right: 2.2em;
-  }
-  .grayLine {
-    width: 96%;
-    margin: 0 auto;
-  }
+  /* ============== INTRO ============== */
   .intro__title {
     font-size: 60px;
   }
@@ -49,6 +42,7 @@
   .feature__text {
     font-size: 13.5px;
     margin-top: 1.38em;
+    width: 250px;
   }
 
   /* ============== WORKS ============== */
@@ -82,7 +76,7 @@
     font-size: 12.3px;
   }
   .team__social {
-    padding-bottom: 4.25em;
+    padding-bottom: 4.5em;
   }
 
   /* ============== REVIEWS ============== */
@@ -163,24 +157,25 @@
   body {
     font-size: 13px;
   }
-
-  /* ============== HEADER AND INTRO ============== */
-  .navigation {
-    width: 60%;
-    justify-content: space-between;
+  .container {
+    max-width: 770px;
   }
-  .navigation__link:last-child {
-    margin-right: 20px;
+  /* ============== HEADER ============== */
+  .header__body {
+    height: 80px;
   }
-  .header {
-    height: 6em;
+  .header__body img {
+    width: 155px;
+    margin-left: 5px;
   }
-  .header__inner {
-    padding-top: 2.05em;
+  .header__list {
+    margin-right: 5px;
   }
   .grayLine {
-    padding-top: 2.08em;
+    width: 99%;
   }
+
+  /* ============== INTRO ============== */
   .intro__title {
     font-size: 48px;
   }
@@ -339,7 +334,7 @@
   }
   .block-info__aboutText,
   .block-info__locationText {
-    font-size: 12.8px;
+    font-size: 12.5px;
   }
   .block-info__aboutText {
     width: 93%;
@@ -364,26 +359,146 @@
     font-size: 12px;
   }
 
-  /* ============== HEADER AND INTRO ============== */
-  .header {
-    height: 5.65em;
+  /* ============== HEADER ============== */
+  .header__body {
+    height: 60px;
   }
-  .header__inner {
-    padding-top: 2em;
+  .header__body img {
+    width: 150px;
+    margin-left: 9px;
   }
-  .header__inner img {
-    width: 173px;
-  }
-  .navigation {
-    display: none;
-  }
-  .burger__menu {
-    display: flex;
+  .header__list {
+    margin-right: 9px;
   }
   .grayLine {
-    padding-top: 1.96em;
-    width: 95%;
+    width: 98.55%;
   }
+  .header__link:hover {
+    border-bottom: 1px solid #fff;
+    opacity: 0.8;
+  }
+
+  /* ----------------------------------------- */
+  /* ============== MENU BURGER ============== */
+  /* ----------------------------------------- */
+
+  .header__body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+
+    position: relative;
+  }
+
+  .header__burger {
+    display: block;
+    width: 30px;
+    height: 20px;
+
+    position: relative;
+    margin-right: 7px;
+    z-index: 3;
+  }
+
+  .header__burger span {
+    background-color: #fff;
+
+    position: absolute;
+    left: 0;
+    top: 9px;
+  }
+
+  .header__burger::before,
+  .header__burger::after {
+    content: '';
+    background-color: #fff;
+
+    position: absolute;
+    left: 0;
+  }
+
+  .header__burger::before {
+    top: 0;
+  }
+
+  .header__burger::after {
+    bottom: 0;
+  }
+
+  .header__burger span,
+  .header__burger::before,
+  .header__burger::after {
+    width: 100%;
+    height: 2px;
+
+    transition: all 0.35s ease 0s; /* Время для анимации */
+  }
+
+  /* Анимация (основные, подойдут для всех сайтов)  */
+  .header__burger span {
+    top: 50%;
+    transform: scale(1) translate(0px, -50%);
+  }
+
+  .header__burger._active span {
+    transform: scale(0) translate(0px, -50%);
+  }
+
+  .header__burger._active::before {
+    top: 50%;
+    transform: rotate(-45deg) translate(0px, -50%);
+  }
+
+  .header__burger._active::after {
+    bottom: 50%;
+    transform: rotate(45deg) translate(0px, 50%);
+  }
+
+  .header__menu {
+    width: 270px;
+    height: 100%;
+    padding: 85px 30px 30px 25px;
+    /* background-color: #ffff9a;
+    opacity: 1; */
+
+    background-color: black;
+    opacity: 0.9;
+
+    position: fixed;
+    top: 0;
+    /* По умолчанию должны задать его длину (270px) */
+    left: -270px;
+
+    /* Время появления используется в скрипте - script.js*/
+    transition: left 0.5s ease 0s;
+    overflow: auto; /* Самое важное */
+  }
+
+  .header__menu._active {
+    left: 0;
+  }
+
+  .header__list {
+    padding: 0;
+    display: block;
+  }
+
+  .header__list li {
+    margin-bottom: 20px;
+  }
+
+  .header__link {
+    font-size: 20px;
+    /* color: rgb(180, 6, 157);
+    opacity: 0.8; */
+
+    color: #fff;
+    opacity: 1;
+  }
+  /* ----------------------------------- */
+
+  /* ============== INTRO ============== */
   .intro__title {
     font-size: 35px;
     margin-bottom: 0.5em;
@@ -535,29 +650,29 @@
     font-size: 11px;
   }
 
-  /* ============== HEADER AND INTRO ============== */
-  .header__inner img {
-    width: 162px;
+  /* ============== HEADER ============== */
+  .header__body img {
+    width: 140px;
+    margin-left: 5px;
   }
-  .burger__menu {
-    width: 26px;
-    margin-right: 16.5px;
-  }
-  .header__inner {
-    padding-top: 1.82em;
-  }
-  .burger__menu span::before,
-  .burger__menu span,
-  .burger__menu span::after {
-    height: 2.1px;
-  }
-  .header {
-    height: 5.4em;
+  .header__burger {
+    margin-right: 5px;
   }
   .grayLine {
-    padding-top: 1.86em;
-    width: 94%;
+    width: 98%;
   }
+  /* ============== BURGER MENU ============== */
+  .header__link {
+    font-size: 16px;
+  }
+  .header__menu {
+    padding-left: 20px;
+    width: 230px;
+
+    left: -230px;
+  }
+
+  /* ============== INTRO ============== */
   .intro__title {
     font-size: 25.05px;
     margin-top: 1.25em;
@@ -867,42 +982,34 @@
   body {
     font-size: 9px;
   }
-
-  /* ============== HEADER AND INTRO ============== */
-  .header__inner {
-    padding-top: 1.5em;
+  /* ============== HEADER ============== */
+  .header__body {
+    height: 56px;
   }
-  .header__inner img {
-    padding-top: 2.5px;
-    padding-left: 0;
-    width: 110px;
-    margin-left: 0.9em;
-  }
-  .burger__menu {
-    margin-right: 1.2em;
-    width: 23px;
-  }
-  .burger__menu span::before {
-    top: -7px;
-  }
-  .burger__menu span::after {
-    top: 7px;
-  }
-  .burger__menu span::before,
-  .burger__menu span,
-  .burger__menu span::after {
-    height: 1.9px;
-  }
-  .header {
-    height: 5.04em;
+  .header__body img {
+    margin-left: 4px;
   }
   .grayLine {
-    padding-top: 1.623em;
-    width: 94.5%;
+    width: 98.2%;
   }
+  /* ============== BURGER MENU ============== */
+  .header__burger {
+    margin-right: 4px;
+  }
+  .header__menu {
+    padding-left: 19px;
+
+    width: 195px;
+    left: -195px;
+  }
+  .header__link {
+    font-size: 15px;
+  }
+
+  /* ============== INTRO ============== */
   .intro__title {
     font-size: 20px;
-    margin-top: 1em;
+    margin-top: 1.8em;
     margin-bottom: 0.38em;
     width: 85%;
   }
@@ -929,11 +1036,11 @@
     margin-top: 2.8em;
   }
   .feature__name {
-    font-size: 8.4px;
+    font-size: 9px;
     margin-top: 1.2em;
   }
   .feature__text {
-    font-size: 8px;
+    font-size: 9px;
     margin-top: 0.6em;
     padding-bottom: 0;
   }
@@ -964,11 +1071,12 @@
     margin-top: 1em;
   }
   .people-work {
-    font-size: 8.4px;
+    font-size: 9px;
     width: 80%;
   }
   .team__text {
-    font-size: 8px;
+    font-size: 9px;
+    width: 85%;
   }
   .team__social a {
     height: 2.15em;
@@ -1016,7 +1124,7 @@
     padding-top: 1.9em;
   }
   .download__title {
-    font-size: 11px;
+    font-size: 11.5px;
     width: 75%;
     max-width: 210px;
   }
@@ -1033,7 +1141,7 @@
     margin-bottom: 2.1em;
   }
   .btn--long span {
-    font-size: 6px;
+    font-size: 7px;
   }
 
   /* ============== FOOTER ============== */
@@ -1050,7 +1158,7 @@
   }
   .block-info__locationText,
   .block-info__aboutText {
-    font-size: 7.6px;
+    font-size: 8px;
   }
   .block-info__locationText {
     max-width: 11em;
@@ -1074,7 +1182,7 @@
   }
 
   .siteCreation__text {
-    font-size: 7.5px;
+    font-size: 8px;
   }
   .block-with-information {
     padding: 0.7em 0 0.7em;
@@ -1082,10 +1190,25 @@
 }
 
 @media (max-width: 276px) {
-  /* ============== HEADER AND INTRO ============== */
+  /* ============== HEADER ============== */
+  .header__body {
+    height: 52px;
+  }
+  .header__body img {
+    width: 132.5px;
+  }
+  /* ============== BURGER MENU ============== */
+  .header__menu {
+    padding-top: 72px;
+    width: 180px;
+    left: -180px;
+  }
+
+  /* ============== INTRO ============== */
   .intro__title {
     width: 90%;
     font-size: 19px;
+    margin-top: 1.4em;
   }
 
   /* ============== REVIEWS ============== */
@@ -1101,5 +1224,19 @@
     margin-top: 1.3em;
     padding-left: 2.3em;
     padding-bottom: 35px;
+  }
+
+  /* ============== DOWNLOAD ============== */
+  .btn--long span {
+    font-size: 6.5px;
+  }
+
+  /* ============== FOOTER ============== */
+  .block-info__locationText,
+  .block-info__aboutText {
+    font-size: 7.6px;
+  }
+  .siteCreation__text {
+    font-size: 7px;
   }
 }
