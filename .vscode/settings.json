@@ -1,3 +1,4 @@
+// Исходный код для автоматического форматирования с помощью prettier
 {
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
